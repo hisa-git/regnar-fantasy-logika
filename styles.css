@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    font-family: "Geologica", sans-serif;
+    text-decoration: none;
+}
+html {
+  scroll-margin-bottom: -80px;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  background-image: linear-gradient(#ffffff,#cebfdd);
+} 
+.html::before {
+  content: "";
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+  nav {
+    vertical-align:middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #252229;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    text-align: center;
+    z-index: 9999;
+    min-height: 40px;
+}
+.screen1{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 60%, #3b2764 100%), url('forest.jpg');
+    height: 85vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 8vw;
+    font-weight: 400;
+}
+h2{
+    justify-self: center;
+    color: rgb(0, 0, 0);
+    font-size: 7vw;
+}
+.screen2{
+    height: fit-content;
+    margin-bottom: 16vh;
+    scroll-margin-top: -30vh;
+}
+.block_cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    flex-wrap: nowrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: #3b2764 2px solid;
+    border-radius: 8px;
+    padding: 1vb;
+    width: 31%;
+  }
+  .card__descriptor {
+    text-align: center;
+  }
+.card img{
+    width: 24vw;
+    height: 16vw;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+nav a{
+    color: white;
+    margin-top: 2vh;
+}
+nav a::after {
+    content: "";
+    height: 3px; 
+    background-color: white; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+    display: block;
+    margin-top: 2vh;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav-item-with-sub {
+  position: relative;
+  vertical-align:middle;
+  height: 50%;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #252229;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  min-width: 120px;
+  z-index: 9999;
+}
+
+.submenu a {
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background-color: #3b3640;
+}
+
+.nav-item-with-sub:hover .submenu {
+  display: flex;
+  line-height: 100%;
+}
+
+.shop-screen{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vh;
+}
+.shop-screen button{
+    width: 24vw;
+    display: flex;
+    justify-self: center;
+    background-color: #3b2764;
+    border-radius: 24px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 4vb;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+.card button{
+    width: 16vw;
+    display: flex;
+    justify-self: center;
+    background-color: #3b2764;
+    border-radius: 16px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 2vb;
+    margin-top: 2vh;  
+}
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background:#252229;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+#scrollToTopBtn:hover {
+    background-color: #ffffff;
+    color:rgb(0, 0, 0);
+  }
+  
+#scrollToTopBtn:active {
+    transform: scale(0.9);
+  }
+  
+button:hover{
+    background-color: #ffffff;
+    color: black;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2vh 10vw;
+    background-color: #252229;
+    color: #ffffff;
+  }
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer a:hover {
+    color: #3b2764;
+  }
+  .reviews {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 6vh 10vw;
+    background-color: #3b2764;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    position: relative;
+    border-radius: 16px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+  
+  .reviews h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  .review-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  .review-card {
+    background-color: #252229;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(90, 80, 200, 0.2);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .review-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #3a3a5a;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border: 2px solid #8884d8;
+  }
+
+  .name {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .review-card p {
+    font-style: italic;
+    margin: 0.5rem 0 1rem;
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 1.2rem;
+    margin-top: auto;
+  }
+.shop-container {
+  color: #000000;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop-add {
+  display: flex;
+  gap: 4vw;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 4vh;
+  flex-wrap: wrap;
+}
+.shop-text {
+  flex: 1 1 300px;
+  font-size: 1.1rem;
+}
+.shop-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.shop-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.main-button {
+  background-color: #3b2764;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: #3b2764 2px solid;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+.main-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: #000000 2px solid;
+}
+@media (max-width: 768px) {
+  .shop-add {
+    flex-direction: column;
+    text-align: center;
+  }
+  .shop-text, .shop-img {
+    flex: 1 1 100%;
+  }
+  .history img{
+    display: flex;
+    justify-self: center;
+    float: none;
+  }
+}
+#inshop{
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  font-size: 6vw;
+}
+.potion-shop{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border: #000000 2px solid;
+  border-radius: 16px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 30%, #3b2764 100%), url('images/potionbg.jpg');
+  background-size: cover;
+  margin-top: 4vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#potion-form{
+  margin-left: 10vw;
+  padding-top: 8vh;
+  margin-bottom: 8vh;
+}
+form label {
+  color: #ffffff;
+  margin-bottom: 0.5vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: fit-content;
+}
+
+form label:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.potion-shop button{
+  background-color: #ffffff;
+  color: black;
+  width: fit-content;
+  margin-top: 2vh;
+  border-radius: 8px;
+  padding: 2vb;
+}
+#potion-info{
+  max-width: 30vw;
+  color: white;
+}
+#potion-title{
+  color: white;
+}
+form{
+  display: inline-grid;
+  position: relative;
+  width: 30vw;
+}
+.card-image{
+  overflow: hidden;
+  border-radius: 8px;
+}
+.right-shop-part{
+  margin-top: 8vh;
+}
+.history{
+  margin: 10vw;
+}
+.history p, .history img {
+  margin-bottom: 1.5em;
+}
+.history img{
+  float: right;
+  height: 48vh;
+  border-radius: 16px;
+  margin: 2vb;
+}
+.history-bg{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, #3b2764 100%), url("images/diaryheader.jpg");
+  width: 100%;
+  height: 74vh;
+  min-height: 60px;
+  position: relative;
+  background-size: cover;
+  background-position: center 45%;
+}
+.history-bg h2{
+  margin-top: 8vh;
+  padding-top: 18vh;
+  color: white;
+}
+#shopContainer {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #252229;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#cartInfo {
+  position: fixed;
+  top: 65px;
+  right: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

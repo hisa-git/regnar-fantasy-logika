@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фентезі 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-item-with-sub">
+      <a href="index.html">Головна</a>
+      <div class="submenu">
+        <a href="index.html#entry1">Історія</a>
+        <a href="index.html#entry2">Останні події</a>
+        <a href="index.html#entry3">Перехід до магазину</a>
+      </div>
+    </div>
+    <div class="nav-item-with-sub">
+      <a href="diary.html">Щоденник</a>
+      <div class="submenu">
+        <a href="diary.html#entry1">Запис 1</a>
+        <a href="diary.html#entry2">Запис 2</a>
+        <a href="diary.html#entry3">Запис 3</a>
+      </div>
+    </div>
+    <div class="nav-item-with-sub">
+      <a href="shop.html">Магазин</a>
+      <div class="submenu">
+        <a href="shop.html#entry1">Основні товари</a>
+        <a href="shop.html#entry2">Свої зілля</a>
+        <a href="shop.html#entry3">Відгуки</a>
+      </div>
+    </div>
+  </nav> 
+    <div class="screen1">
+        <h1>Сайт чаклуна Регнара</h1>
+    </div>
+    <div class="screen2">
+        <svg id="entry1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3b2764" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,176C672,213,768,267,864,261.3C960,256,1056,192,1152,181.3C1248,171,1344,213,1392,234.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <p class="history">Привіт, я Регнар — хлопець із північного села, який вирішив покинути звичну роботу на полях і зануритися у світ магії. Зараз я поділюсь своїми першими кроками у чаклунстві, цікавими пригодами та, звісно, продаватиму магічні товари, які сам створюю або знаходжу. Мій сайт — це місце, де можна знайти не тільки чарівні товари, але й історії з мого життя, що ведуть до великих змін.</p>
+        <h2 id="entry2">Останні події</h2>
+        <div class="block_cards">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/fight.jpg" alt="">
+            </div>
+                <p>Історія про те, як я вижив у битві за допомогою нового закляття</p>
+                <button onclick="location.href='diary.html#entry1';">Дізнатися більше</button>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="images/beer.jpg" alt="">
+            </div>
+                <p>Як мене надурив огр в таверні під час підрахунку ціни</p>
+                <button onclick="location.href='diary.html#entry2';">Дізнатися більше</button>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="images/village.jpg" alt="">
+            </div>
+                <p>Про мої плани про виїзд з рідного села для вивчення магії</p>
+                <button onclick="location.href='diary.html#entry3';">Дізнатися більше</button>
+            </div>
+        </div>
+    </div>
+    <div class="shop-screen" id="entry3">
+      <div class="shop-container">
+        <div class="shop-add">
+          <div class="shop-text">
+            <b>Я створив свій інтернет-магазин, де продаються різні магічні товари.</b>
+            <p>
+              Це — перший магічний інтернет-магазин, який підійде як новачкам, так і експертам у магічних битвах.
+              Можна обрати свій склад зілля склад і замовити унікальний еліксир. Наявні як отруйні, так і цілючі елементи.
+            </p>
+          </div>
+          <div class="shop-img">
+            <img src="images/potions.jpg" alt="Магічні зілля">
+          </div>
+        </div>
+        <button class="main-button" onclick="location.href='shop.html';">Перейти до магазину</button>
+      </div>
+    </div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+  &#8679;
+</button>
+</body>
+<footer>
+    <div class="footer-left">
+      <p>© Хісамутдінов Кірілл</p>
+      <p>Fantasy Games Hackathon 2025 - Logika</p>
+  </footer>
+</html>

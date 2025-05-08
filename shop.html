@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фентезі 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-item-with-sub">
+      <a href="index.html">Головна</a>
+      <div class="submenu">
+        <a href="index.html#entry1">Історія</a>
+        <a href="index.html#entry2">Останні події</a>
+        <a href="index.html#entry3">Перехід до магазину</a>
+      </div>
+    </div>
+    <div class="nav-item-with-sub">
+      <a href="diary.html">Щоденник</a>
+      <div class="submenu">
+        <a href="diary.html#entry1">Запис 1</a>
+        <a href="diary.html#entry2">Запис 2</a>
+        <a href="diary.html#entry3">Запис 3</a>
+      </div>
+    </div>
+    <div class="nav-item-with-sub">
+      <a href="shop.html">Магазин</a>
+      <div class="submenu">
+        <a href="shop.html#entry1">Основні товари</a>
+        <a href="shop.html#entry2">Свої зілля</a>
+        <a href="shop.html#entry3">Відгуки</a>
+      </div>
+    </div>
+  </nav> 
+      <h2 id="inshop" >Магазин магічних товарів</h2>
+      <div id="entry1" class="block_cards" >
+        <div class="card">
+        <div class="card-image">
+            <img src="images/item1.jpg" alt="">
+        </div>
+            <p>Сильна отрута - усього один грам вбиває будь яку істоту окрім нежити</p>
+            <p>40 ₭</p>
+            <button class="buying-button" data-name="Сильна отрута" data-price="40">Додати у кошик</button>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="images/item2.jpg" alt="">
+            </div>
+            <p>Якась книга, яку я знайшов під час подорожі. Була записка "не дивитись"</p>
+            <p>100 ₭</p>
+            <button class="buying-button" data-name="Книга" data-price="100">Додати у кошик</button>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="images/item3.jpg" alt="">
+            </div>
+            <p>Кінжал проти вампірів. Дуже корисна штука, незамінна під час дослідження старих особняків</p>
+            <p>90 ₭</p>
+            <button class="buying-button" data-name="Кінжал" data-price="90">Додати у кошик</button>
+        </div>
+    </div>
+  <div class="block_cards">
+    <div class="card">
+        <div class="card-image">
+            <img src="images/item4.jpg" alt="">
+        </div>
+        <p>Магічна свічка</p>
+        <p>20 ₭</p>
+        <button class="buying-button" data-name="Свічка" data-price="20">Додати у кошик</button>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img src="images/item5.jpg" alt="">
+        </div>
+        <p>Гральні кубики для гри в Dungeons And Dragons</p>
+        <p>10 ₭</p>
+        <button class="buying-button" data-name="Кубики" data-price="10">Додати у кошик</button>
+    </div>
+    <div class="card" >
+        <div class="card-image">
+            <img src="images/item6.jpg" alt="">
+        </div>
+        <p>Красива лампа, викликає відчуття спокою та ейфорії, якщо на неї дивитись</p>
+        <p>100 ₭</p>
+        <button class="buying-button" data-name="Лампа" data-price="100">Додати у кошик</button>
+    </div>
+</div>
+  <h2 id="entry2">Замов своє зілля</h2>
+  <div class="potion-shop" >
+    <form id="potion-form" >
+      <label ><input type="checkbox" name="ingredient" value="М’ята" data-price="10"> М’ята (10 ₭)</label><br>
+      <label><input type="checkbox" name="ingredient" value="Кров дракона" data-price="50"> Кров дракона (50 ₭)</label><br>
+      <label><input type="checkbox" name="ingredient" value="Пил феї" data-price="30"> Пил феї (30 ₭)</label><br>
+      <label><input type="checkbox" name="ingredient" value="Корінь мандрагори" data-price="25"> Корінь мандрагори (25 ₭)</label><br>
+      <label><input type="checkbox" name="ingredient" value="Очі тритона" data-price="40"> Очі тритона (40 ₭)</label><br>
+    </form>
+    <div class="right-shop-part">
+        <h3 id="potion-title"></h3>
+        <p id="potion-info">Виберіть інгредієнти для зілля</p>
+        <button type="button" onclick="orderPotion()">Додати у кошик</button>
+    </div>
+  </div>
+  <section class="reviews" id="entry3">
+    <h2>Відгуки наших клієнтів</h2>
+    <div class="review-cards">
+      <div class="review-card">
+        <div class="review-author">
+          <img src="images/knight.png" alt="Сер Ґавейн" class="avatar">
+          <span class="name">Сер Ґавейн, лицар</span>
+        </div>
+        <p>«Замовив зілля хоробрості — і наступного дня зробив пропозицію принцесі! Дякую!»</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review-card">
+        <div class="review-author">
+          <img src="images/bard.jpg" alt="Бард Лорік" class="avatar">
+          <span class="name">Бард Лорік</span>
+        </div>
+        <p>«Моє зілля бадьорості повернуло мені здатність співати до ранку в таверні. Працює!»</p>
+        <div class="stars">★★★★☆</div>
+      </div>
+      <div class="review-card">
+        <div class="review-author">
+          <img src="images/mage.jpg" alt="Магістр Талас" class="avatar">
+          <span class="name">Магістр Талас</span>
+        </div>
+        <p>«Інгредієнти обрав сам — вийшло зілля, що позбавляє від мігрені. Ідеально!»</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review-card">
+        <div class="review-author">
+          <img src="images/apprentice.jpg" alt="Учень Мерліна" class="avatar">
+          <span class="name">Учень Таласа</span>
+        </div>
+        <p>«Зілля вогняного дихання трохи спалило штори, але враження — на все життя!»</p>
+        <div class="stars">★★★☆☆</div>
+      </div>
+    </div>
+  </section>  
+</body>
+<footer>
+    <div class="footer-left">
+      <p>© Хісамутдінов Кірілл</p>
+      <p>Fantasy Games Hackathon 2025 - Logika</p>
+  </footer>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">&#8679;</button>
+  <button id="shopContainer" onclick="placeOrder()">🛒</button>
+  <div id="cartInfo">
+    <span id="itemCount">0</span> товари — <span id="totalPrice">0</span>₭
+  </div>
+</html>
